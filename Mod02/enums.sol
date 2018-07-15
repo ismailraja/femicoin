@@ -1,5 +1,5 @@
 
-pragma solidity 0.4.19;
+pragma solidity 0.4.24;
 
 //contract definition
 contract generalStructure {
@@ -14,7 +14,7 @@ contract generalStructure {
     }
     
     // state structure
-    myStruct  stateStructure = myStruct("Ritesh", 10, true, new uint[](2));
+    myStruct  stateStructure = myStruct("Femina", 10, true, new uint[](2));
     
     myStruct  stateStructure1;
     
@@ -35,7 +35,7 @@ contract generalStructure {
        localStructure.myAge = 30;
        
        //assigning values to state variable
-       stateStructure1 =   myStruct("Ritesh", 10, true, new uint[](2));
+       stateStructure1 =   myStruct("Femina", 10, true, new uint[](2));
        
        //returning pointerlocalStructure.Age -- returns 30
        return pointerlocalStructure.myAge;

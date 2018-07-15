@@ -1,4 +1,4 @@
-pragma solidity 0.4.19;
+pragma solidity 0.4.24;
 
 interface IHelloWorld {
    function GetValue() public view returns (uint);
