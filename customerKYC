@@ -1,0 +1,45 @@
+pragma solidity ^0.5.0;
+
+contract kyc {
+
+    //  Struct customer
+    //  uname - username of the customer
+    //  dataHash - customer data
+    //  rating - rating given to customer given based on regularity
+    //  upvotes - number of upvotes recieved from banks
+    //  bank - address of bank that validated the customer account
+
+    struct Customer {
+        string uname;
+        string dataHash;
+        uint rating;
+        uint upvotes;
+        address bank;
+        string password;
+    }
+
+    //  Struct Organisation
+    //  name - name of the bank/organisation
+    //  ethAddress - ethereum address of the bank/organisation
+    //  rating - rating based on number of valid/invalid verified accounts
+    //  KYC_count - number of KYCs verified by the bank/organisation
+
+    struct Organisation {
+        string name;
+        address ethAddress;
+        uint rating;
+        uint KYC_count;
+        string regNumber;
+    }
+
+    struct Request {
+        string uname;
+        address bankAddress;
+        bool isAllowed;
+    }
+
+    //  list of all customers
+
+    Customer[] allCustomers;
+}
+
